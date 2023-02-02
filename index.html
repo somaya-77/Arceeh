@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FONT AWESOME LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;700&family=Oswald:wght@200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Patrick+Hand&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,100;1,100&display=swap"
+        rel="stylesheet">
+
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:wght@300;400;700&family=Oswald:wght@200;300;400;500;600;700&family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Patrick+Hand&family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,100;1,100&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- STYLE LINKS -->
+    <link rel="stylesheet" href="css/media/large-screen.css" media="(min-width:1100px)">
+    <link rel="stylesheet" href="css/media/tablet.css" media="(min-width:500px) and (max-width:1099px)">
+    <link rel="stylesheet" href="css/media/phone.css" media="(max-width:499px)">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Archee</title>
+</head>
+
+<body>
+    <!-- START LOADER -->
+    <!-- <div class="loader"></div> -->
+    <!-- END LOADER -->
+    <!-- ****************************** -->
+    <!-- START overlay -->
+    <div class="overlay"></div>
+    <!-- END overlay -->
+    <main>
+        <!-- START HEADER -->
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="images/logo-black.jpg" alt="">
+                </div>
+
+                <div class="right-header">
+                    <div class="input-header">
+                        <input type="text" placeholder="Search here...">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="screen-icon">
+                        <a href="#"><i class="fa-solid fa-expand"></i><span>Fullscreen</span>
+                        </a>
+
+                    </div>
+                    <div class="sidebar">
+                        <a href="#">
+                            <i class="fa-solid fa-list-ul" onmousedown="audioOpen.play();"></i><span>Sidebar</span>
+                        </a>
+                        <div class="submenu">
+                            <div class="close-sidebar">
+                                <i class="fa-solid fa-xmark markCloseSideBar" onmousedown="audioClose.play();"></i>
+                            </div>
+
+                            <div class="contain">
+                                <div>
+                                    <img class="logo-menu" src="images/logo-white-small.png" alt="">
+                                </div>
+                                <div>
+                                    <p>Creeping they’re she’d. Air fruit fourth moving saw sixth after dominion male him
+                                        them fruitful.</p>
+                                </div>
+
+                                <div>
+                                    <h4>INSTAGRAM</h4>
+                                </div>
+
+                                <div class="images">
+                                    <div class="img"><img src="images/1.jpg" alt=""><i
+                                            class="fa-brands fa-instagram"></i></div>
+                                    <div class="img"><img src="images/2.jpg" alt=""><i
+                                            class="fa-brands fa-instagram"></i></div>
+                                    <div class="img"><img src="images/3.jpg" alt=""><i
+                                            class="fa-brands fa-instagram"></i></div>
+                                    <div class="img"><img src="images/4.jpg" alt=""><i
+                                            class="fa-brands fa-instagram"></i></div>
+                                    <div class="img"><img src="images/5.jpg" alt=""><i
+                                            class="fa-brands fa-instagram"></i></div>
+                                    <div class="img"><img src="images/6.jpg" alt=""><i
+                                            class="fa-brands fa-instagram"></i></div>
+                                </div>
+
+                                <div>
+                                    <h4>FOLLOW US</h4>
+                                </div>
+
+                                <div class="icons">
+                                    <div><i class="fa-brands fa-facebook-f"></i></div>
+                                    <div><i class="fa-brands fa-twitter"></i></div>
+                                    <div><i class="fa-brands fa-dribbble"></i></div>
+                                    <div><i class="fa-brands fa-instagram"></i></div>
+                                </div>
+
+                                <div class="copy">
+                                    <p>© 2021. Designed by VLThemes.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bar">
+                        <a href="#">
+                            <i class="fa-solid fa-bars" onmousedown="audioOpen.play();"></i><span>Menu</span>
+                        </a>
+                        <div class="visible-page-menu">
+                            <div class="close-bar">
+                                <i class="fa-solid fa-xmark markCloseBar" onmousedown="audioClose.play();"></i>
+                            </div>
+
+                            <div class="links">
+                                <div>
+                                    <div class="link">
+                                        <a href="#"><span>HOME</span>
+                                            <i class="fa-solid fa-circle"></i>
+                                        </a>
+                                    </div>
+                                    <div class="link"><a href="#"><span>PAGES</span><i
+                                                class="fa-solid fa-circle"></i></a></div>
+                                    <div class="link"><a href="#"><span>PORTFOLIO</span><i
+                                                class="fa-solid fa-circle"></i></a></div>
+                                    <div class="link"><a href="#"><span>BLOG</span><i
+                                                class="fa-solid fa-circle"></i></a></div>
+                                    <div class="link"><a href="#"><span>AHOP</span><i
+                                                class="fa-solid fa-circle"></i></a></div>
+                                </div>
+                            </div>
+
+                            <footer>
+                                <div class="copy">
+                                    <p>© 2021. All rights reserved.</p>
+                                </div>
+                                <div class="icons">
+                                    <div><i class="fa-brands fa-facebook-f"></i></div>
+                                    <div><i class="fa-brands fa-twitter"></i></div>
+                                    <div><i class="fa-brands fa-dribbble"></i></div>
+                                    <div><i class="fa-brands fa-instagram"></i></div>
+                                </div>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- // END HEADER // -->
+        <!-- //////////////////////////////////////// -->
+        <!-- START SECTION HOME -->
+        <section class="home">
+            <div class="fixed-socials">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <span>FACEBOOK</span>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                    <span>TWITTER</span>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-dribbble"></i>
+                    <span>DRIBBLE</span>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                    <span>INSTSGRAM</span>
+                </a>
+            </div>
+            <div class="container-home">
+                <div class="left-home">
+                    <div class="black-box-hom">
+                        <div>
+                            <div><i class="fa-solid fa-quote-left"></i></div>
+                            <div><img src="images/avatar-01.jpg" alt=""></div>
+                        </div>
+                        <div>
+                            <p>Kristin Watson <span>from</span> Google</p>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h1>WE’RE MARKETING DIGITAL AGENCY</h1>
+                    </div>
+
+                    <div class="description">
+                        <p>Their him above unto darkness saw fill moving. Seasons morning appear void creeping there
+                            moved there.</p>
+                    </div>
+
+                    <div>
+                        <button><a href="#">GET STARTED</a></button>
+                    </div>
+                </div>
+                <div class="right-home">
+
+                </div>
+            </div>
+
+        </section>
+        <!-- // END SECTION HOME // -->
+        <!-- ///////////////////////////////////// -->
+        <!-- START about SECTION -->
+        <section class="about">
+            <div class="container-about">
+                <div class="left-about">
+                    <div></div>
+                </div>
+                <div class="right-about">
+                    <div><span>ABOUT ARCHEE</span></div>
+                    <div>
+                        <h2>STRATEGY-LED DESIGN IN EVERY DETAIL</h2>
+                    </div>
+                    <div>
+                        <p>Spirit gathered to two wherein were divide face under beast whose fly. Multiply created
+                            signs. Don't night life beginning form and signs saw of lesser meat, a. Herb dry he thing.
+                        </p>
+                    </div>
+                    <div>
+                        <button><a href="#">MORE INFO</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // END about SECTION // -->
+        <!-- ////////////////////////////////////// -->
+        <!-- START creative -->
+        <section class="creative">
+            <div class="container-creative">
+                <div class="left-creative">
+                    <div>
+                        <h2>CREATIVE IDEAS WITH OUR SERVICES</h2>
+                    </div>
+                    <div class="progrees">
+                        <div>
+                            <div class="flex">
+                                <h3>SEO & MARKETING</h3>
+                                <span>90%</span>
+                            </div>
+                            <div class="line">
+                                <div class="full-line-one">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex">
+                                <h3>WEB DESIGN</h3>
+                                <span>75%</span>
+                            </div>
+                            <div class="line">
+                                <div class="full-line-two">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-creative">
+                    <div class="box-1">
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3>BRANDING</h3>
+                        <p>Day wherein blessed grass his. Second to creepeth to his said itself she'd, saying after
+                            kind.</p>
+                    </div>
+                    <div class="box-2">
+                        <i class="fa-solid fa-layer-group"></i>
+                        <h3>WEB DESIGN</h3>
+                        <p>Day wherein blessed grass his. Second to creepeth to his said itself she'd, saying after
+                            kind.</p>
+                    </div>
+                    <div class="box-3">
+                        <i class="fa-solid fa-palette"></i>
+                        <h3>ILLUSTRATION</h3>
+                        <p>Day wherein blessed grass his. Second to creepeth to his said itself she'd, saying after
+                            kind.</p>
+                    </div>
+                    <div class="box-4">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>DEVELOPMENT</h3>
+                        <p>Day wherein blessed grass his. Second to creepeth to his said itself she'd, saying after
+                            kind.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- // END creative // -->
+        <!-- ////////////////////////////////////////////////////// -->
+        <!-- START LEET -->
+        <section class="meet">
+            <div class="left-meet">
+                <h2>MEET OUR CREW</h2>
+            </div>
+            <div class="right-meet">
+                <button><a href="#">VIEW MORE</a></button>
+            </div>
+        </section>
+        <!-- // end LEET // -->
+        <!-- ///////////////////////////////////////////////////// -->
+        <!-- START SECTION TEAM -->
+        <section class="team">
+            <div class="team">
+                <div class="img">
+                    <img src="images/team-01-500x501.jpg" alt="">
+
+                    <div class="title">
+                        <h2>DARREN ARIANA</h2>
+                        <p>Co-Founder & CEO</p>
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team">
+                <div class="img">
+                    <img src="images/team-02-500x501.jpg" alt="">
+
+                    <div class="title">
+                        <h2>TRISHA VINCE</h2>
+                        <p>Project Manager</p>
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team">
+                <div class="img">
+                    <img src="images/team-03-500x501.jpg" alt="">
+
+                    <div class="title">
+                        <h2>PHILLIP REGGIE</h2>
+                        <p>Web-Developer</p>
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="team">
+                <div class="img">
+                    <img src="images/team-04-500x501.jpg" alt="">
+
+                    <div class="title">
+                        <h2>ANTARES ANNA</h2>
+                        <p>UX / UI Designer</p>
+                        <div class="icon">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            <i class="fa-brands fa-twitter"></i>
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- END SECTION TEAM -->
+        <!-- ///////////////////////////////////////////////// -->
+        <!-- START SECTION NUMBER -->
+        <section class="number">
+            <div class="items">
+                <div class="item">
+                    <h2>452</h2>
+                    <h4>WORKS COMPLETED</h4>
+                </div>
+
+                <div class="item">
+                    <h2>348</h2>
+                    <h4>HAPPY CUSTOMERS</h4>
+                </div>
+
+                <div class="item">
+                    <h2>516</h2>
+                    <h4>POSITIVE REVIEWS</h4>
+                </div>
+
+                <div class="item">
+                    <h2>1,154</h2>
+                    <h4>WORKING HOURS</h4>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION NUMBER -->
+        <!-- //////////////////////////////////////////////// -->
+        <!-- START SECTION SLIDER -->
+        <section class="slider">
+            <div class="container-slider">
+                <div class="left-slider">
+                    <div class="image">
+                        <i class="fa-solid fa-play"></i>
+                    </div>
+                </div>
+                <div class="right-slider">
+                    <div class="top">
+                        <i class="fa-sharp fa-solid fa-quote-left"></i>
+                    </div>
+                    <div class="slides">
+                        <div class="slide">
+                            <div>
+                                <p>"SET CREEPETH SEASONS DOMINON MOVING THEIR LESSER OVER ABOVE THE I WAS GOOD. MEAT IS WITHOUT HE BEGINING."</p>
+                            </div>
+                            <div class="pro">
+                                <div>
+                                    <img src="images/avatar-01.jpg" alt="">
+                                </div>
+                                <div>
+                                    <h3>JOSEPH BRIDGES</h3>
+                                    <span>NY Times</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <span>02 / 03</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- END SECTION SLIDER -->
+        <!-- /////////////////////////////////////////// -->
+        <!-- START SECTION FORM -->
+        <section class="form-map">
+            <div class="container-form-map">
+                <div class="form">
+                    <div>
+                        <h2>CONTACT US</h2>
+                    </div>
+                    <div>
+                        <p>Above creature the rule blessed brought. Multiply they're one. Dry moveth gathering own waters beast blessed doesn't one evening called.</p>
+                    </div>
+                    <form action="">
+                        <div>
+                            <input type="text" placeholder="Your name*">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Your email*">
+                        </div>
+                        <div>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Your message"></textarea>
+                        </div>
+                    </form>
+                    <div>
+                        <button><a href="#">SEND MESSAGE</a></button>
+                    </div>
+                </div>
+                <div class="map">
+                    <img src="images/m.png" alt="">
+                </div>
+            </div>
+
+        </section>
+        <!-- END SECTION FORM -->
+        <!-- //////////////////////////////////////// -->
+        <!-- START SECTION PHOTOS -->
+        <section class="photos">
+            <div class="container-photos">
+                
+                <div class="images">
+                    <div class="img"><img src="images/instagram-01-300x300.jpg" alt=""><i
+                        class="fa-brands fa-instagram"></i></div>
+                <div class="img"><img src="images/instagram-02-300x300.jpg" alt=""><i
+                        class="fa-brands fa-instagram"></i></div>
+                    <div class="img"><img src="images/1.jpg" alt=""><i
+                            class="fa-brands fa-instagram"></i></div>
+                    <div class="img"><img src="images/2.jpg" alt=""><i
+                            class="fa-brands fa-instagram"></i></div>
+                    <div class="img"><img src="images/3.jpg" alt=""><i
+                            class="fa-brands fa-instagram"></i></div>
+                    <div class="img"><img src="images/4.jpg" alt=""><i
+                            class="fa-brands fa-instagram"></i></div>
+                    <div class="img"><img src="images/5.jpg" alt=""><i
+                            class="fa-brands fa-instagram"></i></div>
+                    <div class="img"><img src="images/6.jpg" alt=""><i
+                            class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+        </section>
+        <!-- // END SECTION PHOTOS // -->
+        <!-- //////////////////////////////////////////////// -->
+        <!-- START FOOTER -->
+        <footer class="page">
+            <div class="left">
+                <div>
+                    <h2>FROM COOL IDEA TO INSANELY GREAT PRODUCT</h2>
+                </div>
+                <div class="flex">
+                    <div>
+                        <img src="images/logo-black.jpg" alt="">
+                    </div>
+                    <div>
+                        <p>
+                            © 2022. Designed by VLThemes.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5>NEW YORK, USA</h5>
+                </div>
+                <div>
+                    <p class="before">info@example.com</p>
+                </div>
+                <div>
+                    <p class="before">+44 987 065 908</p>
+                </div>
+                <div>
+                    <p class="st">10111, Santa Monica
+                        Boulevard, LA</p>
+                </div>
+                <div class="icons">
+                    <div><i class="fa-brands fa-facebook-f"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa-brands fa-dribbble"></i></div>
+                    <div><i class="fa-brands fa-instagram"></i></div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <h5>MIAMI, USA</h5>
+                </div>
+                <div>
+                    <p class="before">info@example.com</p>
+                </div>
+                <div>
+                    <p class="before">+44 987 065 908</p>
+                </div>
+                <div>
+                    <p class="st">10111, Santa Monica
+                        Boulevard, LA</p>
+                </div>
+                <div class="icons">
+                    <div><i class="fa-brands fa-facebook-f"></i></div>
+                    <div><i class="fa-brands fa-twitter"></i></div>
+                    <div><i class="fa-brands fa-dribbble"></i></div>
+                </div>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </main>
+</body>
+<script src="javascript/main.js"></script>
+
+</html>
